@@ -1,0 +1,46 @@
+#+TITLE: Readme
+
+* This repository
+I have moved my public stuff to [[https:www.github.com/coutego][coutego]],
+which is my internet handle in GH but also reddit, twitter, gmail, ...
+Most repositories here are either archived (those moved to [[https://www.github.com/coutego]['coutego']])
+or private.
+
+* About me
+I've been a software developer or involved in software development since the times of the Spectrum.
+I have been programming professionally mostly in Java, but I have also used a bunch of other programming languages quite extensively:
+
+- C/C++
+- C#
+- Python
+- Javascript/Typescript
+- Clojure/Clojurescript
+
+I have also had an interest in open source for a long time and co-founded Monodevelop (a .NET IDE) in 2004
+although these days I use mostly Emacs and IntelliJ, both amazing pieces of software.
+
+I'm a fan of:
+- Dependency injection (the strategy, more than any particular implementation - even though Spring was the revelation to me).
+  DI, like Unix version 7, was an improvement with respect to all preceeding and following architectural styles.
+- Object oriented design and functional programming.
+  I believe that OO and DI techniques are the way to go for overall design while FP techniques are the way to go in the low level implementation.
+  I don't think that it's a coincidence that the most used FP language in mission critical systems uses the actor model.
+- Typescript. Although it can't hide the multiple ugly corners of JS, the type system is just amazing. Anders Hejlsberg is amazing.
+- Clojure. Extremelly elegant language. It would be perfect if it had types. Rich Hickey's talks are great, even if you don't like the language.
+- Emacs. This text editor has been called many things: an OS, a religion, a drug. It's all true. Watch out, kids. There is no coming back.
+- Reading quality (open) source code. First step to write a novel: read many (good) novels. GTK source was a revelation for me at the time.
+  Anything that Linus writes is also worth looking at. The first public release of the source code of git is a master piece.
+  Clojure's standard library is great. Case in point:
+
+ #+begin_src clojure
+  (defn assoc-in
+  "Associates a value in a nested associative structure, where ks is a
+  sequence of keys and v is the new value and returns a new nested structure.
+  If any levels do not exist, hash-maps will be created."
+  {:added "1.0"
+   :static true}
+  [m [k & ks] v]
+  (if ks
+    (assoc m k (assoc-in (get m k) ks v))
+    (assoc m k v)))
+ #+end_src
