@@ -1,9 +1,7 @@
-#+TITLE: Readme
-
 * This repository
 I have moved my public stuff to [[https:www.github.com/coutego][coutego]],
 which is my internet handle in GH but also reddit, twitter, gmail, ...
-Most repositories here are either archived (those moved to [[https://www.github.com/coutego]['coutego']])
+Most repositories here are either archived (those moved to [[https://www.github.com/coutego][coutego]])
 or private.
 
 * About me
